@@ -19,6 +19,7 @@ img {
   width: 7rem;
   border-radius: 10%;
   height: 7rem;
+  margin: 20px;
 }
 h1,
 h3,
@@ -35,7 +36,7 @@ a {
   text-decoration: none;
 }
 .content-wrap {
-  width: 50rem;
+  max-width: 800px;
   margin: 0 auto;
   padding: 60px 0;
   font-family: "Montserrat", sans-serif;
@@ -43,29 +44,40 @@ a {
   display: flex;
   flex-direction: column;
 }
-/*Profile*/
+/***********************************************************Flex**********************************/
+
+.Ed-flex {
+  display: flex;
+  flex-direction: row;
+  margin: 0 60;
+}
+.Ed-item {
+  margin-left: 20px;
+}
+/****************************************************************Profile****************************/
 header {
   background-color: #2f3061;
   margin-top: 0;
   color: white;
   text-align: center;
 }
-/* Flex**/
-
-.Ed-flex {
-  display: inline-flex;
+/*************************************projects*********************************************/
+.projects {
+  padding-bottom: 200px;
 }
-.Ed-item {
-  margin: 20px;
+/***********************************Education**********************************************/
+.Education {
+  background-image: url(../images/EducationImg.jpg);
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 60px;
 }
 /*Exp*/
 .Exp {
   background-color: #a1c6d7;
 }
 /* Cirtification*/
-.Cirtification {
-  background-color: #ffe66d;
-}
+
 .Cirtification a {
   background-color: #2f3061;
   padding: 8px;
@@ -79,11 +91,42 @@ header {
 }
 /*Footer*/
 footer {
-  background-color: #2f3061;
+  background-color: #343434;
   color: white;
   text-align: center;
 }
 .contact-lists {
   list-style: none;
   text-align: left;
+}
+/*REsponsive design*/
+@media screen and (max-width: 650px) {
+  .Ed-flex {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px #343434;
+  }
+  a {
+    margin-bottom: 10px;
+  }
+  section {
+    padding: 0 60px;
+    text-align: center;
+  }
+  img {
+    width: 7rem;
+    border-radius: 10%;
+    height: 7rem;
+    margin: 20px;
+    align-self: center;
+  }
+  p {
+    text-align: left;
+  }
+  h1 {
+    font-size: 75px;
+  }
+  h2 {
+    font-size: 45px;
+  }
 }
