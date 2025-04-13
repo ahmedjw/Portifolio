@@ -189,5 +189,15 @@
         </div>
       </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/ua-parser-js/dist/ua-parser.min.js"></script>
+    <script>
+      if (typeof UAParser !== "undefined") {
+        const uap = new UAParser();
+
+        console.log(uap.getResult()); // This will log the parsed user agent result
+      } else {
+        console.log("UAParser is not loaded.");
+      }
+    </script>
   </body>
 </html>
